@@ -9,10 +9,12 @@
 <body>
     <!-- this "not rendered" text is here because if we see this,
         it means our react app didn't render for some reason" -->
-    <div id="root">not rendered</div> 
-    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
-    <script src="./App.js">
+    <div id="root">not rendered</div>
+     <!-- type="module" is to let vite know we are using ES6 
+        modules instead of common JS modules. The .jsx file type
+        is because vite insists on the .jsx file extension so
+        that it can transpile JSX (you could configure vite to look at .js files, but we are not)-->
+    <script type="module" src="./App.jsx">
     </script>
 </body>
 </html>
